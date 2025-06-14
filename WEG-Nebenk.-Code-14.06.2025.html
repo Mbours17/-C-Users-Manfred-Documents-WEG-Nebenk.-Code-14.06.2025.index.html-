@@ -1,0 +1,1985 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.15  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Manfred ">
+	<META NAME="CREATED" CONTENT="20250614;5535964">
+	<META NAME="CHANGEDBY" CONTENT="Manfred ">
+	<META NAME="CHANGED" CONTENT="20250614;7145320">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="de-DE" DIR="LTR">
+<P STYLE="margin-bottom: 0cm">&lt;!DOCTYPE html&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;html lang=&quot;de&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;head&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;meta charset=&quot;UTF-8&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;title&gt;Nebenkostenabrechnung
+2024&lt;/title&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;script
+src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;link
+href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap&quot;
+rel=&quot;stylesheet&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;link
+href=&quot;https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;display=swap&quot;
+rel=&quot;stylesheet&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;style&gt;</P>
+<P STYLE="margin-bottom: 0cm">body {</P>
+<P STYLE="margin-bottom: 0cm">font-family: 'Inter', sans-serif;</P>
+<P STYLE="margin-bottom: 0cm">background-color: #f0f4f8;</P>
+<P STYLE="margin-bottom: 0cm">color: #333;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.container {</P>
+<P STYLE="margin-bottom: 0cm">max-width: 90%;</P>
+<P STYLE="margin-bottom: 0cm">margin: 2rem auto;</P>
+<P STYLE="margin-bottom: 0cm">padding: 2rem;</P>
+<P STYLE="margin-bottom: 0cm">background-color: #ffffff;</P>
+<P STYLE="margin-bottom: 0cm">border-radius: 12px;</P>
+<P STYLE="margin-bottom: 0cm">box-shadow: 0 10px 25px
+rgba(0,0,0,0.1);</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">h1 {</P>
+<P STYLE="margin-bottom: 0cm">color: #1e3a8a;</P>
+<P STYLE="margin-bottom: 0cm">font-size: 2.5rem;</P>
+<P STYLE="margin-bottom: 0cm">font-weight: 700;</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 1.5rem;</P>
+<P STYLE="margin-bottom: 0cm">text-align: center;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.section-title {</P>
+<P STYLE="margin-bottom: 0cm">font-size: 1.5rem;</P>
+<P STYLE="margin-bottom: 0cm">font-weight: 600;</P>
+<P STYLE="margin-bottom: 0cm">color: #2563eb;</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 2rem;</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">border-bottom: 2px solid #bfdbfe;</P>
+<P STYLE="margin-bottom: 0cm">padding-bottom: 0.5rem;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.input-group {</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 1.25rem;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">label {</P>
+<P STYLE="margin-bottom: 0cm">display: block;</P>
+<P STYLE="margin-bottom: 0cm">font-weight: 500;</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 0.5rem;</P>
+<P STYLE="margin-bottom: 0cm">color: #4b5563;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">input[type=&quot;number&quot;],</P>
+<P STYLE="margin-bottom: 0cm">input[type=&quot;text&quot;],</P>
+<P STYLE="margin-bottom: 0cm">input[type=&quot;date&quot;],</P>
+<P STYLE="margin-bottom: 0cm">select {</P>
+<P STYLE="margin-bottom: 0cm">width: 100%;</P>
+<P STYLE="margin-bottom: 0cm">padding: 0.75rem 1rem;</P>
+<P STYLE="margin-bottom: 0cm">border: 1px solid #d1d5db;</P>
+<P STYLE="margin-bottom: 0cm">border-radius: 8px;</P>
+<P STYLE="margin-bottom: 0cm">font-size: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">color: #333;</P>
+<P STYLE="margin-bottom: 0cm">transition: border-color 0.2s;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">input[type=&quot;number&quot;]:focus,</P>
+<P STYLE="margin-bottom: 0cm">input[type=&quot;text&quot;]:focus,</P>
+<P STYLE="margin-bottom: 0cm">input[type=&quot;date&quot;]:focus,</P>
+<P STYLE="margin-bottom: 0cm">select:focus {</P>
+<P STYLE="margin-bottom: 0cm">outline: none;</P>
+<P STYLE="margin-bottom: 0cm">border-color: #3b82f6;</P>
+<P STYLE="margin-bottom: 0cm">box-shadow: 0 0 0 3px
+rgba(59,130,246,0.2);</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.button-primary {</P>
+<P STYLE="margin-bottom: 0cm">background-color: #2563eb;</P>
+<P STYLE="margin-bottom: 0cm">color: white;</P>
+<P STYLE="margin-bottom: 0cm">padding: 0.8rem 1.5rem;</P>
+<P STYLE="margin-bottom: 0cm">border-radius: 8px;</P>
+<P STYLE="margin-bottom: 0cm">font-size: 1.1rem;</P>
+<P STYLE="margin-bottom: 0cm">font-weight: 600;</P>
+<P STYLE="margin-bottom: 0cm">cursor: pointer;</P>
+<P STYLE="margin-bottom: 0cm">transition: background-color 0.2s,
+transform 0.2s;</P>
+<P STYLE="margin-bottom: 0cm">display: block;</P>
+<P STYLE="margin-bottom: 0cm">width: fit-content;</P>
+<P STYLE="margin-bottom: 0cm">margin: 1.5rem auto 0;</P>
+<P STYLE="margin-bottom: 0cm">box-shadow: 0 4px 10px
+rgba(37,99,235,0.3);</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.button-primary:hover {</P>
+<P STYLE="margin-bottom: 0cm">background-color: #1d4ed8;</P>
+<P STYLE="margin-bottom: 0cm">transform: translateY(-2px);</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.result-box {</P>
+<P STYLE="margin-bottom: 0cm">background-color: #eff6ff;</P>
+<P STYLE="margin-bottom: 0cm">border: 1px solid #bfdbfe;</P>
+<P STYLE="margin-bottom: 0cm">border-radius: 8px;</P>
+<P STYLE="margin-bottom: 0cm">padding: 1.5rem;</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 2rem;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.result-box h2 {</P>
+<P STYLE="margin-bottom: 0cm">font-size: 1.6rem;</P>
+<P STYLE="margin-bottom: 0cm">color: #1e40af;</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">text-align: center;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.result-item {</P>
+<P STYLE="margin-bottom: 0cm">display: flex;</P>
+<P STYLE="margin-bottom: 0cm">justify-content: space-between;</P>
+<P STYLE="margin-bottom: 0cm">padding: 0.6rem 0;</P>
+<P STYLE="margin-bottom: 0cm">border-bottom: 1px dashed #dbeafe;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.result-item:last-child {</P>
+<P STYLE="margin-bottom: 0cm">border-bottom: none;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.result-item span:first-child {</P>
+<P STYLE="margin-bottom: 0cm">font-weight: 500;</P>
+<P STYLE="margin-bottom: 0cm">color: #374151;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.result-item span:last-child {</P>
+<P STYLE="margin-bottom: 0cm">font-weight: 600;</P>
+<P STYLE="margin-bottom: 0cm">color: #1f2937;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.total-result {</P>
+<P STYLE="margin-bottom: 0cm">font-size: 1.25rem;</P>
+<P STYLE="margin-bottom: 0cm">font-weight: 700;</P>
+<P STYLE="margin-bottom: 0cm">color: #1f2937; /* Changed to dark for
+Nachzahlung */</P>
+<P STYLE="margin-bottom: 0cm">text-align: center;</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 1.5rem;</P>
+<P STYLE="margin-bottom: 0cm">padding-top: 1rem;</P>
+<P STYLE="margin-bottom: 0cm">border-top: 2px solid #a7f3d0;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.total-result.negative {</P>
+<P STYLE="margin-bottom: 0cm">color: #dc2626; /* Red for Guthaben */</P>
+<P STYLE="margin-bottom: 0cm">border-top-color: #fecaca;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.owner-share-display {</P>
+<P STYLE="margin-bottom: 0cm">font-size: 0.9em;</P>
+<P STYLE="margin-bottom: 0cm">color: #6b7280;</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 0.25rem;</P>
+<P STYLE="margin-bottom: 0cm">padding-left: 0.5rem;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.letterhead {</P>
+<P STYLE="margin-bottom: 0cm">display: flex;</P>
+<P STYLE="margin-bottom: 0cm">justify-content: space-between;</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 2rem;</P>
+<P STYLE="margin-bottom: 0cm">font-size: 0.9rem;</P>
+<P STYLE="margin-bottom: 0cm">line-height: 1.4;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.letterhead-left {</P>
+<P STYLE="margin-bottom: 0cm">flex: 1;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.letterhead-right {</P>
+<P STYLE="margin-bottom: 0cm">flex: 1;</P>
+<P STYLE="margin-bottom: 0cm">text-align: right;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.recipient-address {</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 0.5rem; /* Reduced margin
+*/</P>
+<P STYLE="margin-bottom: 0cm">min-height: 6em;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">/* The main modal (for errors) will
+still exist */</P>
+<P STYLE="margin-bottom: 0cm">.modal {</P>
+<P STYLE="margin-bottom: 0cm">display: none;</P>
+<P STYLE="margin-bottom: 0cm">position: fixed;</P>
+<P STYLE="margin-bottom: 0cm">z-index: 1000;</P>
+<P STYLE="margin-bottom: 0cm">left: 0;</P>
+<P STYLE="margin-bottom: 0cm">top: 0;</P>
+<P STYLE="margin-bottom: 0cm">width: 100%;</P>
+<P STYLE="margin-bottom: 0cm">height: 100%;</P>
+<P STYLE="margin-bottom: 0cm">overflow: auto;</P>
+<P STYLE="margin-bottom: 0cm">background-color: rgba(0,0,0,0.4);</P>
+<P STYLE="margin-bottom: 0cm">display: flex;</P>
+<P STYLE="margin-bottom: 0cm">align-items: center;</P>
+<P STYLE="margin-bottom: 0cm">justify-content: center;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">.modal-content {</P>
+<P STYLE="margin-bottom: 0cm">background-color: #fefefe;</P>
+<P STYLE="margin-bottom: 0cm">margin: auto;</P>
+<P STYLE="margin-bottom: 0cm">padding: 20px;</P>
+<P STYLE="margin-bottom: 0cm">border: 1px solid #888;</P>
+<P STYLE="margin-bottom: 0cm">border-radius: 12px;</P>
+<P STYLE="margin-bottom: 0cm">width: 80%;</P>
+<P STYLE="margin-bottom: 0cm">max-width: 500px;</P>
+<P STYLE="margin-bottom: 0cm">box-shadow: 0 5px 15px rgba(0,0,0,0.3);</P>
+<P STYLE="margin-bottom: 0cm">position: relative;</P>
+<P STYLE="margin-bottom: 0cm">text-align: center;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">.close-button {</P>
+<P STYLE="margin-bottom: 0cm">color: #aaa;</P>
+<P STYLE="margin-bottom: 0cm">position: absolute;</P>
+<P STYLE="margin-bottom: 0cm">top: 10px;</P>
+<P STYLE="margin-bottom: 0cm">right: 20px;</P>
+<P STYLE="margin-bottom: 0cm">font-size: 28px;</P>
+<P STYLE="margin-bottom: 0cm">font-weight: bold;</P>
+<P STYLE="margin-bottom: 0cm">cursor: pointer;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">.close-button:hover,</P>
+<P STYLE="margin-bottom: 0cm">.close-button:focus {</P>
+<P STYLE="margin-bottom: 0cm">color: black;</P>
+<P STYLE="margin-bottom: 0cm">text-decoration: none;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">/* --- Print-specific styles for the
+main page --- */</P>
+<P STYLE="margin-bottom: 0cm">@media print {</P>
+<P STYLE="margin-bottom: 0cm">.input-group,</P>
+<P STYLE="margin-bottom: 0cm">.button-primary,</P>
+<P STYLE="margin-bottom: 0cm">.section-title, /* Hide all section
+titles in print */</P>
+<P STYLE="margin-bottom: 0cm">.modal, /* Hide the modal if open */</P>
+<P STYLE="margin-bottom: 0cm">.print-buttons-container, /* Hide the
+print buttons themselves in print */</P>
+<P STYLE="margin-bottom: 0cm">#spezifischeLohnkosten, /* Hide this
+input field for printing, if it was somehow present */</P>
+<P STYLE="margin-bottom: 0cm">#fixedCostsEditSection /* Hide the new
+edit section in print */ {</P>
+<P STYLE="margin-bottom: 0cm">display: none !important;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">body {</P>
+<P STYLE="margin-bottom: 0cm">background-color: #fff;</P>
+<P STYLE="margin-bottom: 0cm">margin: 0;</P>
+<P STYLE="margin-bottom: 0cm">padding: 0;</P>
+<P STYLE="margin-bottom: 0cm">color: #000; /* Ensure black text for
+print */</P>
+<P STYLE="margin-bottom: 0cm">font-size: 0.75em; /* Slightly smaller
+base font for print */</P>
+<P STYLE="margin-bottom: 0cm">line-height: 1.2; /* Reduce line height
+for denser text */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.container {</P>
+<P STYLE="margin-bottom: 0cm">box-shadow: none;</P>
+<P STYLE="margin-bottom: 0cm">border: none;</P>
+<P STYLE="margin-bottom: 0cm">margin: 0;</P>
+<P STYLE="margin-bottom: 0cm">padding: 0.8cm; /* Adjusted A4 margins
+for more space */</P>
+<P STYLE="margin-bottom: 0cm">max-width: none;</P>
+<P STYLE="margin-bottom: 0cm">width: 100%;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.letterhead {</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 0.5rem; /* Reduced
+margin */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.recipient-address {</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 0.5rem; /* Reduced margin
+*/</P>
+<P STYLE="margin-bottom: 0cm">min-height: auto; /* Reset min-height
+for print */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.recipient-address-two-columns {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; display: flex;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; justify-content:
+space-between;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; width: 100%; /* Ensure it
+takes full width available */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; min-height: 6em; /*
+Adjust as needed */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.recipient-address-column {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; flex: 1;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; display: inline-block; /*
+Allow elements to sit next to each other */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; vertical-align: top;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; line-height: 1.2;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.recipient-address-column.offset {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-left: 3cm; /* 3cm
+offset as requested */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">h1 {</P>
+<P STYLE="margin-bottom: 0cm">page-break-after: avoid;</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 0.5rem; /* Reduced margin
+*/</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 0.5rem;</P>
+<P STYLE="margin-bottom: 0cm">text-align: center; /* Changed from
+left to center */</P>
+<P STYLE="margin-bottom: 0cm">font-size: 1.5rem; /* Slightly smaller
+font */</P>
+<P STYLE="margin-bottom: 0cm">color: #000; /* Ensure black title for
+print */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">h2 {</P>
+<P STYLE="margin-bottom: 0cm">page-break-after: avoid;</P>
+<P STYLE="margin-bottom: 0cm">text-align: left;</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 0.8rem; /* Reduced margin
+*/</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 0.4rem; /* Reduced
+margin */</P>
+<P STYLE="margin-bottom: 0cm">color: #000; /* Ensure black heading
+for print */</P>
+<P STYLE="margin-bottom: 0cm">font-size: 1.2rem; /* Slightly smaller
+font */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.result-box {</P>
+<P STYLE="margin-bottom: 0cm">border: 1px solid #ccc;</P>
+<P STYLE="margin-bottom: 0cm">padding: 0.8rem; /* Reduced padding */</P>
+<P STYLE="margin-bottom: 0cm">background-color: #fff;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.result-item {</P>
+<P STYLE="margin-bottom: 0cm">padding: 0.2rem 0; /* Further reduced
+padding */</P>
+<P STYLE="margin-bottom: 0cm">page-break-inside: avoid; /* Keep list
+items on one page */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.total-result {</P>
+<P STYLE="margin-bottom: 0cm">padding-top: 0.5rem; /* Reduced padding
+*/</P>
+<P STYLE="margin-bottom: 0cm">margin-top: 0.8rem; /* Reduced margin
+*/</P>
+<P STYLE="margin-bottom: 0cm">border-top: 1px solid #ccc; /* Simpler
+border for print */</P>
+<P STYLE="margin-bottom: 0cm">font-size: 1.1em; /* Slightly smaller
+font */</P>
+<P STYLE="margin-bottom: 0cm">page-break-inside: avoid; /* Keep total
+result on one page */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">/* Ensure that the result section is
+always visible in print */</P>
+<P STYLE="margin-bottom: 0cm">#results {</P>
+<P STYLE="margin-bottom: 0cm">display: block !important;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">/* Hide the IBAN input in print mode,
+keep label and text visible */</P>
+<P STYLE="margin-bottom: 0cm">#ibanInfo {</P>
+<P STYLE="margin-bottom: 0cm">display: none !important;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">/* Ensure date input label and
+descriptive text are visible */</P>
+<P STYLE="margin-bottom: 0cm">.input-group label[for=&quot;paymentDate&quot;],</P>
+<P STYLE="margin-bottom: 0cm">.input-group.text-sm:last-child {</P>
+<P STYLE="margin-bottom: 0cm">display: block !important;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">/* Style the payment date for print */</P>
+<P STYLE="margin-bottom: 0cm">#paymentDate { /* Hide the input field
+itself */</P>
+<P STYLE="margin-bottom: 0cm">display: none !important;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">#paymentDatePrint { /* Show the span
+with formatted date */</P>
+<P STYLE="margin-bottom: 0cm">display: inline !important; /* Make it
+visible for print */</P>
+<P STYLE="margin-bottom: 0cm">font-weight: bold; /* Make it stand out
+slightly */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">/* Hide salutation in print as it's
+part of the address block usually */</P>
+<P STYLE="margin-bottom: 0cm">#salutationPrint {</P>
+<P STYLE="margin-bottom: 0cm">display: block !important;</P>
+<P STYLE="margin-bottom: 0cm">margin-bottom: 0.5rem;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">/* Hide the new dynamic salutation for
+print */</P>
+<P STYLE="margin-bottom: 0cm">#dynamicSalutation {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; display: none !important;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">/* Ensure contenteditable span is
+displayed as normal text for print */</P>
+<P STYLE="margin-bottom: 0cm">.editable-sum[contenteditable=&quot;true&quot;]
+{</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; border: none !important;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; background-color:
+transparent !important;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; min-width: auto
+!important; /* Reset min-width for print */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; padding: 0 !important; /*
+Remove padding for print */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">/* New print-specific styles for
+generated print window */</P>
+<P STYLE="margin-bottom: 0cm">.print-page-break {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; page-break-after: always;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; width: 21cm; /* A4 width
+*/</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; height: 29.7cm; /* A4
+height, approximate */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; padding: 0.8cm; /*
+Standard A4 margins - further reduced */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; box-sizing: border-box;
+/* Include padding in dimensions */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; display: block; /* Ensure
+it takes full block space */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 9pt; /* Common
+print font size - slightly reduced */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; line-height: 1.1; /*
+Reduced line height */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page:last-child {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; page-break-after: auto;
+/* No page break after the last one */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page h1 {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 18pt; /*
+Smaller H1 for print */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; text-align: center;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-bottom: 8pt; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; color: #000;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page h2 {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 14pt; /*
+Smaller H2 for print */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; text-align: left;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-top: 10pt; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-bottom: 6pt; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; color: #000;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page .letterhead {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 8pt; /*
+Smaller letterhead font */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-bottom: 0.7cm; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; line-height: 1.25;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page p {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 8.5pt; /*
+Default paragraph font size */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-bottom: 4pt; /*
+Default paragraph margin */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page .print-summary-line { /*
+New style for the summary line */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 9pt; /*
+Slightly smaller for detail */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; text-align: center;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-top: -5pt; /* Pull
+it slightly closer to H1 */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-bottom: 5pt; /*
+Small margin before salutation */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-weight: 500;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page p[style*=&quot;font-family:
+'Dancing Script'&quot;] { /* Target the dynamic salutation */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 12pt
+!important; /* Smaller for print but still distinctive */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-top: 5pt
+!important;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-bottom: 10pt
+!important;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">.print-page .result-box {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; border: 1px solid #ccc;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; padding: 8pt; /* Reduced
+padding */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; background-color: #fff;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-top: 8pt; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page .result-item {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; display: flex;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; justify-content:
+space-between;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; padding: 2.5pt 0; /*
+Further reduced padding */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; page-break-inside: avoid;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 8.5pt; /*
+Slightly larger for main result items */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.print-page .total-result {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; padding-top: 6pt; /*
+Reduced padding */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-top: 8pt; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; border-top: 1px solid
+#ccc;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 9.5pt; /*
+Smaller font for total result */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; page-break-inside: avoid;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">/* Styles for the new cost breakdown
+sections */</P>
+<P STYLE="margin-bottom: 0cm">.section-title-print {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 11pt; /*
+Smaller section title for print */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-weight: 600;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; color: #2563eb;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-top: 12pt; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-bottom: 5pt; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; border-bottom: 1px solid
+#bfdbfe;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; padding-bottom: 2pt; /*
+Reduced padding */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; text-align: left;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.cost-breakdown-section {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-bottom: 8pt; /*
+Margin after a cost section */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.cost-item-print {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; display: flex;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; justify-content:
+space-between;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; padding: 1.5pt 0; /* Even
+tighter spacing */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-size: 8pt; /* Even
+smaller font for detail lines */</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; border-bottom: 1px dotted
+#e0e0e0;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; page-break-inside: avoid;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.cost-item-print:last-child {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; border-bottom: none;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.cost-item-print span:first-child {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; flex: 2;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-weight: 500;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.cost-item-print span:nth-child(2) {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; flex: 1;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; text-align: right;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; margin-right: 8pt; /*
+Reduced margin */</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">.owner-share-print {</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; flex: 1;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; text-align: right;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; font-weight: 600;</P>
+<P STYLE="margin-bottom: 0cm">}</P>
+<P STYLE="margin-bottom: 0cm">&lt;/style&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/head&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;body class=&quot;bg-gray-100 p-4
+sm:p-6 lg:p-8&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;container&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;letterhead&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;letterhead-left&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;strong&gt;WEG Seligenstädter
+Straße 23&lt;/strong&gt;&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">63500 Seligenstadt</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;recipientAddress&quot;
+class=&quot;recipient-address&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">Eigentümer der WEG&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">Seligenstädter Str. 23&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">63500 Seligenstadt</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;letterhead-right&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">Verwalter:&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">Dr. Hans Rolf Flechsenhar&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">Seligenstädter Str. 21&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">63500 Seligenstadt&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span id=&quot;currentDate&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;h1&gt;Nebenkostenabrechnung
+2024&lt;/h1&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;p id=&quot;dynamicSalutation&quot;
+class=&quot;text-center text-lg mt-2 mb-4&quot;&gt;&lt;/p&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div
+class=&quot;section-title&quot;&gt;Eigentümerdaten&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label for=&quot;ownerSelect&quot;&gt;Eigentümer
+auswählen:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;select id=&quot;ownerSelect&quot;
+class=&quot;block w-full p-3 border border-gray-300 rounded-lg
+focus:ring-blue-500 focus:border-blue-500&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/select&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label for=&quot;heizkosten&quot;&gt;Heizkosten,
+Kalt- und Warmwasser lt. beigefügter Abrechnung durch EAD
+Rhein-Main:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;heizkosten&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;hausgeldzahlung&quot;&gt;Individuelle Hausgeldzahlung
+(Gesamt über das Jahr):&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;hausgeldzahlung&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;fixedCostsEditSection&quot;
+class=&quot;section-title&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    Fixkosten bearbeiten</P>
+<P STYLE="margin-bottom: 0cm">    &lt;button
+onclick=&quot;toggleFixedCostsEdit()&quot; class=&quot;button-primary&quot;
+style=&quot;float: right; margin-top: -5px; padding: 0.5rem
+1rem;&quot;&gt;Bearbeiten / Ausblenden&lt;/button&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;fixedCostsForm&quot;
+class=&quot;hidden&quot;&gt; &lt;p class=&quot;text-sm text-gray-600
+mb-4&quot;&gt;Hier können Sie die Fixkosten bearbeiten und
+speichern. Diese Werte werden dann für alle Eigentümer bei der
+Berechnung verwendet.&lt;/p&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editLohnHausmeister&quot;&gt;Lohn Hausmeister:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editLohnHausmeister&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editHausreinigung&quot;&gt;Hausreinigung und
+Gartenpflege:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editHausreinigung&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editWartungGaragentor&quot;&gt;Wartung Garagentor und
+Feuerlöscher:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editWartungGaragentor&quot; value=&quot;0.00&quot;
+step=&quot;0.01&quot; class=&quot;w-full p-3 border border-gray-300
+rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editHausversicherung&quot;&gt;Hausversicherung:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editHausversicherung&quot; value=&quot;0.00&quot;
+step=&quot;0.01&quot; class=&quot;w-full p-3 border border-gray-300
+rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editAllgemeinstrom&quot;&gt;Allgemeinstrom:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editAllgemeinstrom&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editKaminifeger&quot;&gt;Kaminifeger:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editKaminifeger&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editLegionellenTest&quot;&gt;Legionellen Test
+2024-2025:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editLegionellenTest&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editLohnReparatur&quot;&gt;Lohn Hausmeister für
+Reparaturarbeiten:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editLohnReparatur&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editRepInstandhaltungGebaeude&quot;&gt;Rep. u.
+Instandhaltung Gebäude:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editRepInstandhaltungGebaeude&quot; value=&quot;0.00&quot;
+step=&quot;0.01&quot; class=&quot;w-full p-3 border border-gray-300
+rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editRepInstandhaltungAussenanlage&quot;&gt;Rep. u.
+Instandhaltung Außenanlage:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editRepInstandhaltungAussenanlage&quot; value=&quot;0.00&quot;
+step=&quot;0.01&quot; class=&quot;w-full p-3 border border-gray-300
+rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editHausverwaltung&quot;&gt;Hausverwaltung:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editHausverwaltung&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editBuchfuehrungskosten&quot;&gt;Buchführungskosten:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editBuchfuehrungskosten&quot; value=&quot;0.00&quot;
+step=&quot;0.01&quot; class=&quot;w-full p-3 border border-gray-300
+rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editKontogebuehren&quot;&gt;Kontogebühren:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editKontogebuehren&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;label
+for=&quot;editLohnkostenEstgGesamt&quot;&gt;Gesamte Lohnkosten gem. §
+35a ESTG (dieser Wert wird geteilt):&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">        &lt;input type=&quot;number&quot;
+id=&quot;editLohnkostenEstgGesamt&quot; value=&quot;0.00&quot;
+step=&quot;0.01&quot; class=&quot;w-full p-3 border border-gray-300
+rounded-lg&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    &lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    &lt;button
+onclick=&quot;saveFixedCostsToFirestore()&quot;
+class=&quot;button-primary&quot;&gt;Fixkosten speichern&lt;/button&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div
+class=&quot;section-title&quot;&gt;Umlagefähige Kosten (konstant,
+anpassbar)&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label for=&quot;lohnHausmeister&quot;&gt;2.
+Weitere umlagefähige Nebenkosten - Lohn Hausmeister: &lt;span
+id=&quot;lohnHausmeisterTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;lohnHausmeister&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;lohnHausmeisterShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;hausreinigung&quot;&gt;Hausreinigung und Gartenpflege:
+&lt;span id=&quot;hausreinigungTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;hausreinigung&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;hausreinigungShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;wartungGaragentor&quot;&gt;Wartung Garagentor und
+Feuerlöscher: &lt;span id=&quot;wartungGaragentorTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;wartungGaragentor&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;wartungGaragentorShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;hausversicherung&quot;&gt;Hausversicherung:&lt;span
+id=&quot;hausversicherungTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;hausversicherung&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;hausversicherungShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;allgemeinstrom&quot;&gt;Allgemeinstrom:&lt;span
+id=&quot;allgemeinstromTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;allgemeinstrom&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;allgemeinstromShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;kaminifeger&quot;&gt;Kaminifeger:&lt;span
+id=&quot;kaminifegerTotal&quot; class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;kaminifeger&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;kaminifegerShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;legionellenTest&quot;&gt;Legionellen Test 2024-2025: &lt;span
+id=&quot;legionellenTestTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;legionellenTest&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;legionellenTestShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;section-title&quot;&gt;Nicht
+umlagefähige Kosten (konstant, anpassbar)&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label for=&quot;lohnReparatur&quot;&gt;3.
+Nicht umlagefähige Nebenkosten - Lohn Hausmeister für
+Reparaturarbeiten: &lt;span id=&quot;lohnReparaturTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;lohnReparatur&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;lohnReparaturShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;repInstandhaltungGebaeude&quot;&gt;Rep. u. Instandhaltung
+Gebäude: &lt;span id=&quot;repInstandhaltungGebaeudeTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;repInstandhaltungGebaeude&quot; value=&quot;0.00&quot;
+step=&quot;0.01&quot; class=&quot;w-full p-3 border border-gray-300
+rounded-lg&quot; readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div
+id=&quot;repInstandhaltungGebaeudeShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;repInstandhaltungAussenanlage&quot;&gt;Rep. u.
+Instandhaltung Außenanlage: &lt;span
+id=&quot;repInstandhaltungAussenanlageTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;repInstandhaltungAussenanlage&quot; value=&quot;0.00&quot;
+step=&quot;0.01&quot; class=&quot;w-full p-3 border border-gray-300
+rounded-lg&quot; readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div
+id=&quot;repInstandhaltungAussenanlageShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;hausverwaltung&quot;&gt;Hausverwaltung:&lt;span
+id=&quot;hausverwaltungTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;hausverwaltung&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;hausverwaltungShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;buchfuehrungskosten&quot;&gt;Buchführungskosten:&lt;span
+id=&quot;buchfuehrungskostenTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;buchfuehrungskosten&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;buchfuehrungskostenShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label
+for=&quot;kontogebuehren&quot;&gt;Kontogebühren:&lt;span
+id=&quot;kontogebuehrenTotal&quot;
+class=&quot;font-normal&quot;&gt;&lt;/span&gt;&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;number&quot;
+id=&quot;kontogebuehren&quot; value=&quot;0.00&quot; step=&quot;0.01&quot;
+class=&quot;w-full p-3 border border-gray-300 rounded-lg&quot;
+readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;kontogebuehrenShare&quot;
+class=&quot;owner-share-display hidden&quot;&gt;&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;button
+onclick=&quot;calculateNebenkosten()&quot;
+class=&quot;button-primary&quot;&gt;Abrechnung berechnen&lt;/button&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;print-buttons-container
+flex justify-center gap-4 mt-8&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;button
+onclick=&quot;printSelectedOwner()&quot;
+class=&quot;button-primary&quot;&gt;Aktuellen Eigentümer
+drucken&lt;/button&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;button
+onclick=&quot;printAllOwnersInternal()&quot;
+class=&quot;button-primary&quot;&gt;Sammeldruck für alle
+Eigentümer&lt;/button&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;results&quot;
+class=&quot;result-box hidden&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;h2&gt;Abrechnungsergebnis für
+&lt;span id=&quot;ownerNameResult&quot;&gt;&lt;/span&gt;&lt;/h2&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span&gt;Miteigentumsanteil:&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span
+id=&quot;ownershipShareResult&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span&gt;Gesamtkosten Umlagefähig
+(Pool):&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span
+id=&quot;totalUmlagefaehigFixedPool&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span&gt;Anteil des Eigentümers aus
+den umlagefähigen Nebenkosten:&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span
+id=&quot;ownerAnteilUmlagefaehigPool&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span&gt;Gesamtkosten (nicht
+umlagefähig):&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span
+id=&quot;totalNichtUmlagefaehig&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span&gt;Anteil des Eigentümers aus
+den nicht umlagefähigen Nebenkosten:&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span
+id=&quot;ownerAnteilNichtUmlagefaehig&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span&gt;Heizkosten, Kalt- und
+Warmwasser lt. beigefügter Abrechnung durch EAD Rhein-Main:&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span id=&quot;heizkostenResult&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span&gt;Ihr Anteil für ET:&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span id=&quot;ownerAnteilET&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span&gt;Hausgeldzahlung:&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span
+id=&quot;hausgeldzahlungResult&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;result-item text-sm
+text-gray-600 italic&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; &lt;span&gt;enthaltene
+Lohnkosten gem. § 35a ESTG &lt;span id=&quot;lohnkostenEstgGesamtDisplay&quot;
+contenteditable=&quot;true&quot;
+class=&quot;editable-sum&quot;&gt;0.00&lt;/span&gt;€:&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&nbsp; &nbsp; &lt;span
+id=&quot;lohnkostenEstgAnteil&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;total-result&quot;
+id=&quot;finalResult&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span
+id=&quot;nachzahlungGuthaben&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group
+text-center mt-4&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label for=&quot;paymentDate&quot;
+class=&quot;text-sm&quot;&gt;Nachzahlungen bitte nach Genehmigung
+durch die Eigentümerversammlung bis zum&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;date&quot;
+id=&quot;paymentDate&quot; class=&quot;w-full p-3 border
+border-gray-300 rounded-lg text-center mx-auto&quot;
+style=&quot;max-width: 200px;&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span id=&quot;paymentDatePrint&quot;
+class=&quot;hidden&quot;&gt;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;input-group
+text-center mt-4&quot; id=&quot;ibanInfo&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;label for=&quot;ownerIban&quot;
+class=&quot;text-sm&quot;&gt;Bitte überweisen Sie den Betrag auf
+folgendes Konto:&lt;/label&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;input type=&quot;text&quot;
+id=&quot;ownerIban&quot; class=&quot;w-full p-3 border
+border-gray-300 rounded-lg text-center mx-auto&quot;
+style=&quot;max-width: 300px;&quot; value=&quot;DE17 5065 2124 0112
+2345 39&quot; readonly&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;div id=&quot;infoModal&quot;
+class=&quot;modal&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;div class=&quot;modal-content&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;span class=&quot;close-button&quot;
+id=&quot;closeModalButton&quot;&gt;&amp;times;&lt;/span&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;p id=&quot;modalMessage&quot;&gt;&lt;/p&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm">&lt;/div&gt;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">&lt;script type=&quot;module&quot;&gt;</P>
+<P STYLE="margin-bottom: 0cm">    // Import the functions you need
+from the SDKs you need</P>
+<P STYLE="margin-bottom: 0cm">    import { initializeApp } from
+&quot;https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js&quot;;</P>
+<P STYLE="margin-bottom: 0cm">    import { getFirestore } from
+&quot;https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js&quot;;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    // Your web app's Firebase
+configuration - VON IHNEN BEREITGESTELLT</P>
+<P STYLE="margin-bottom: 0cm">    const firebaseConfig = {</P>
+<P STYLE="margin-bottom: 0cm">        apiKey:
+&quot;AIzaSyAubuIWEtEXpxdCCRkXMXaq6ydhP5zmeFA&quot;,</P>
+<P STYLE="margin-bottom: 0cm">        authDomain:
+&quot;nebenkostenabrechnung-20-923c5.firebaseapp.com&quot;,</P>
+<P STYLE="margin-bottom: 0cm">        projectId:
+&quot;nebenkostenabrechnung-20-923c5&quot;,</P>
+<P STYLE="margin-bottom: 0cm">        storageBucket:
+&quot;nebenkostenabrechnung-20-923c5.firebasestorage.app&quot;,</P>
+<P STYLE="margin-bottom: 0cm">        messagingSenderId:
+&quot;405182594825&quot;,</P>
+<P STYLE="margin-bottom: 0cm">        appId:
+&quot;1:405182594825:web:2d1b47584df64ba4a35dd8&quot;,</P>
+<P STYLE="margin-bottom: 0cm">        measurementId: &quot;G-YJP1P1265T&quot;</P>
+<P STYLE="margin-bottom: 0cm">    };</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    // Initialize Firebase</P>
+<P STYLE="margin-bottom: 0cm">    const app =
+initializeApp(firebaseConfig);</P>
+<P STYLE="margin-bottom: 0cm">    const db = getFirestore(app);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    // Globale Variablen für
+Eigentümer und fixe Kosten</P>
+<P STYLE="margin-bottom: 0cm">    let owners = []; // Wird von
+Firestore geladen</P>
+<P STYLE="margin-bottom: 0cm">    let fixedCostsData = {}; // Wird
+von Firestore geladen</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    // Global variable to store the
+currently selected owner's data</P>
+<P STYLE="margin-bottom: 0cm">    let currentOwner = null;</P>
+<P STYLE="margin-bottom: 0cm">    // Define the default IBAN for all
+owners</P>
+<P STYLE="margin-bottom: 0cm">    const DEFAULT_IBAN = 'DE17 5065
+2124 0112 2345 39';</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">   
+document.addEventListener('DOMContentLoaded', async () =&gt; {</P>
+<P STYLE="margin-bottom: 0cm">        const ownerSelect =
+document.getElementById('ownerSelect');</P>
+<P STYLE="margin-bottom: 0cm">        const currentDateSpan =
+document.getElementById('currentDate');</P>
+<P STYLE="margin-bottom: 0cm">        const paymentDateInput =
+document.getElementById('paymentDate');</P>
+<P STYLE="margin-bottom: 0cm">        const ownerIbanInput =
+document.getElementById('ownerIban');</P>
+<P STYLE="margin-bottom: 0cm">        const closeModalButton =
+document.getElementById('closeModalButton');</P>
+<P STYLE="margin-bottom: 0cm">        const infoModal =
+document.getElementById('infoModal');</P>
+<P STYLE="margin-bottom: 0cm">        const
+lohnkostenEstgGesamtDisplay =
+document.getElementById('lohnkostenEstgGesamtDisplay');</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Daten von Firestore laden</P>
+<P STYLE="margin-bottom: 0cm">        await loadDataFromFirestore();</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Populate owner dropdown -
+jetzt nach dem Laden der Daten</P>
+<P STYLE="margin-bottom: 0cm">        owners.sort((a, b) =&gt;
+a.name.localeCompare(b.name));</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        owners.forEach(owner =&gt; {</P>
+<P STYLE="margin-bottom: 0cm">            const option =
+document.createElement('option');</P>
+<P STYLE="margin-bottom: 0cm">            option.value = owner.id;</P>
+<P STYLE="margin-bottom: 0cm">            option.textContent =
+owner.name;</P>
+<P STYLE="margin-bottom: 0cm">           
+ownerSelect.appendChild(option);</P>
+<P STYLE="margin-bottom: 0cm">        });</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Set current date</P>
+<P STYLE="margin-bottom: 0cm">        const today = new Date();</P>
+<P STYLE="margin-bottom: 0cm">        currentDateSpan.textContent =
+today.toLocaleDateString('de-DE');</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Set default payment date
+(e.g., 30 days from now)</P>
+<P STYLE="margin-bottom: 0cm">        const defaultPaymentDate = new
+Date();</P>
+<P STYLE="margin-bottom: 0cm">       
+defaultPaymentDate.setDate(today.getDate() + 30);</P>
+<P STYLE="margin-bottom: 0cm">        paymentDateInput.value =
+defaultPaymentDate.toISOString().split('T')[0];</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Initial load of owner data
+and calculation</P>
+<P STYLE="margin-bottom: 0cm">        loadOwnerData();</P>
+<P STYLE="margin-bottom: 0cm">        calculateNebenkosten();</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Event listeners for input
+changes to trigger recalculation</P>
+<P STYLE="margin-bottom: 0cm">        const inputElements =
+document.querySelectorAll('input[type=&quot;number&quot;]:not([readonly])');</P>
+<P STYLE="margin-bottom: 0cm">        inputElements.forEach(input =&gt;
+{</P>
+<P STYLE="margin-bottom: 0cm">           
+input.addEventListener('input', calculateNebenkosten);</P>
+<P STYLE="margin-bottom: 0cm">        });</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('paymentDate').addEventListener('change',
+calculateNebenkosten);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Add event listener for the
+contenteditable span to recalculate on input</P>
+<P STYLE="margin-bottom: 0cm">       
+lohnkostenEstgGesamtDisplay.addEventListener('input',
+calculateNebenkosten);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Event listener for owner
+selection change</P>
+<P STYLE="margin-bottom: 0cm">       
+ownerSelect.addEventListener('change', () =&gt; {</P>
+<P STYLE="margin-bottom: 0cm">            loadOwnerData();</P>
+<P STYLE="margin-bottom: 0cm">            calculateNebenkosten();</P>
+<P STYLE="margin-bottom: 0cm">        });</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Modal close button event
+listener</P>
+<P STYLE="margin-bottom: 0cm">       
+closeModalButton.addEventListener('click', () =&gt; {</P>
+<P STYLE="margin-bottom: 0cm">            infoModal.style.display =
+'none';</P>
+<P STYLE="margin-bottom: 0cm">        });</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Close modal when clicking
+outside of it</P>
+<P STYLE="margin-bottom: 0cm">       
+window.addEventListener('click', (event) =&gt; {</P>
+<P STYLE="margin-bottom: 0cm">            if (event.target ==
+infoModal) {</P>
+<P STYLE="margin-bottom: 0cm">                infoModal.style.display
+= 'none';</P>
+<P STYLE="margin-bottom: 0cm">            }</P>
+<P STYLE="margin-bottom: 0cm">        });</P>
+<P STYLE="margin-bottom: 0cm">    });</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    /**</P>
+<P STYLE="margin-bottom: 0cm">     * Shows a modal dialog with a
+message.</P>
+<P STYLE="margin-bottom: 0cm">     * @param {string} message - The
+message to display in the modal.</P>
+<P STYLE="margin-bottom: 0cm">     */</P>
+<P STYLE="margin-bottom: 0cm">    function showModal(message) {</P>
+<P STYLE="margin-bottom: 0cm">        const infoModal =
+document.getElementById('infoModal');</P>
+<P STYLE="margin-bottom: 0cm">        const modalMessage =
+document.getElementById('modalMessage');</P>
+<P STYLE="margin-bottom: 0cm">        modalMessage.textContent =
+message;</P>
+<P STYLE="margin-bottom: 0cm">        infoModal.style.display =
+'flex'; // Use flex to center content</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    /**</P>
+<P STYLE="margin-bottom: 0cm">     * Formats a number to a currency
+string (e.g. 1234.56 €).</P>
+<P STYLE="margin-bottom: 0cm">     * @param {number} value - The
+number to format.</P>
+<P STYLE="margin-bottom: 0cm">     * @returns {string} The formatted
+currency string.</P>
+<P STYLE="margin-bottom: 0cm">     */</P>
+<P STYLE="margin-bottom: 0cm">    function formatCurrency(value) {</P>
+<P STYLE="margin-bottom: 0cm">        return
+value.toFixed(2).replace('.', ',') + ' €'; // Use comma as decimal
+separator for German format</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    /**</P>
+<P STYLE="margin-bottom: 0cm">     * NEU: Schaltet die Sichtbarkeit
+der Fixkosten-Bearbeitungsmaske um und lädt die aktuellen Werte.</P>
+<P STYLE="margin-bottom: 0cm">     */</P>
+<P STYLE="margin-bottom: 0cm">    function toggleFixedCostsEdit() {</P>
+<P STYLE="margin-bottom: 0cm">        const fixedCostsForm =
+document.getElementById('fixedCostsForm');</P>
+<P STYLE="margin-bottom: 0cm">       
+fixedCostsForm.classList.toggle('hidden');</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        // Wenn die Maske sichtbar
+wird, lade die aktuellen Werte in die Bearbeitungsfelder</P>
+<P STYLE="margin-bottom: 0cm">        if
+(!fixedCostsForm.classList.contains('hidden')) {</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editLohnHausmeister').value =
+(fixedCostsData.lohnHausmeister || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editHausreinigung').value =
+(fixedCostsData.hausreinigung || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editWartungGaragentor').value =
+(fixedCostsData.wartungGaragentor || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editHausversicherung').value =
+(fixedCostsData.hausversicherung || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editAllgemeinstrom').value =
+(fixedCostsData.allgemeinstrom || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editKaminifeger').value =
+(fixedCostsData.kaminifeger || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editLegionellenTest').value =
+(fixedCostsData.legionellenTest || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editLohnReparatur').value =
+(fixedCostsData.lohnReparatur || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editRepInstandhaltungGebaeude').value =
+(fixedCostsData.repInstandhaltungGebaeude || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editRepInstandhaltungAussenanlage').value =
+(fixedCostsData.repInstandhaltungAussenanlage || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editHausverwaltung').value =
+(fixedCostsData.hausverwaltung || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editBuchfuehrungskosten').value =
+(fixedCostsData.buchfuehrungskosten || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editKontogebuehren').value =
+(fixedCostsData.kontogebuehren || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('editLohnkostenEstgGesamt').value =
+(fixedCostsData.lohnkostenEstgGesamt || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">        }</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    /**</P>
+<P STYLE="margin-bottom: 0cm">     * NEU: Speichert die Fixkosten in
+Firestore.</P>
+<P STYLE="margin-bottom: 0cm">     */</P>
+<P STYLE="margin-bottom: 0cm">    async function
+saveFixedCostsToFirestore() {</P>
+<P STYLE="margin-bottom: 0cm">        const updatedFixedCosts = {</P>
+<P STYLE="margin-bottom: 0cm">            lohnHausmeister:
+parseFloat(document.getElementById('editLohnHausmeister').value) ||
+0,</P>
+<P STYLE="margin-bottom: 0cm">            hausreinigung:
+parseFloat(document.getElementById('editHausreinigung').value) || 0,</P>
+<P STYLE="margin-bottom: 0cm">            wartungGaragentor:
+parseFloat(document.getElementById('editWartungGaragentor').value) ||
+0,</P>
+<P STYLE="margin-bottom: 0cm">            hausversicherung:
+parseFloat(document.getElementById('editHausversicherung').value) ||
+0,</P>
+<P STYLE="margin-bottom: 0cm">            allgemeinstrom:
+parseFloat(document.getElementById('editAllgemeinstrom').value) || 0,</P>
+<P STYLE="margin-bottom: 0cm">            kaminifeger:
+parseFloat(document.getElementById('editKaminifeger').value) || 0,</P>
+<P STYLE="margin-bottom: 0cm">            legionellenTest:
+parseFloat(document.getElementById('editLegionellenTest').value) ||
+0,</P>
+<P STYLE="margin-bottom: 0cm">            lohnReparatur:
+parseFloat(document.getElementById('editLohnReparatur').value) || 0,</P>
+<P STYLE="margin-bottom: 0cm">            repInstandhaltungGebaeude:
+parseFloat(document.getElementById('editRepInstandhaltungGebaeude').value)
+|| 0,</P>
+<P STYLE="margin-bottom: 0cm">           
+repInstandhaltungAussenanlage:
+parseFloat(document.getElementById('editRepInstandhaltungAussenanlage').value)
+|| 0,</P>
+<P STYLE="margin-bottom: 0cm">            hausverwaltung:
+parseFloat(document.getElementById('editHausverwaltung').value) || 0,</P>
+<P STYLE="margin-bottom: 0cm">            buchfuehrungskosten:
+parseFloat(document.getElementById('editBuchfuehrungskosten').value)
+|| 0,</P>
+<P STYLE="margin-bottom: 0cm">            kontogebuehren:
+parseFloat(document.getElementById('editKontogebuehren').value) || 0,</P>
+<P STYLE="margin-bottom: 0cm">            lohnkostenEstgGesamt:
+parseFloat(document.getElementById('editLohnkostenEstgGesamt').value)
+|| 0</P>
+<P STYLE="margin-bottom: 0cm">        };</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        try {</P>
+<P STYLE="margin-bottom: 0cm">            // Speichern der Daten im
+Dokument 'currentCosts' der Sammlung 'fixedCosts'</P>
+<P STYLE="margin-bottom: 0cm">            await
+db.collection('fixedCosts').doc('currentCosts').set(updatedFixedCosts);</P>
+<P STYLE="margin-bottom: 0cm">            fixedCostsData =
+updatedFixedCosts; // Globale Variable aktualisieren</P>
+<P STYLE="margin-bottom: 0cm">            showModal('Fixkosten
+erfolgreich gespeichert!');</P>
+<P STYLE="margin-bottom: 0cm">            // Aktualisiere die
+Anzeigefelder der Fixkosten auf der Hauptseite</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('lohnHausmeister').value =
+fixedCostsData.lohnHausmeister.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('hausreinigung').value =
+fixedCostsData.hausreinigung.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('wartungGaragentor').value =
+fixedCostsData.wartungGaragentor.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('hausversicherung').value =
+fixedCostsData.hausversicherung.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('allgemeinstrom').value =
+fixedCostsData.allgemeinstrom.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('kaminifeger').value =
+fixedCostsData.kaminifeger.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('legionellenTest').value =
+fixedCostsData.legionellenTest.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('lohnReparatur').value =
+fixedCostsData.lohnReparatur.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('repInstandhaltungGebaeude').value =
+fixedCostsData.repInstandhaltungGebaeude.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('repInstandhaltungAussenanlage').value =
+fixedCostsData.repInstandhaltungAussenanlage.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('hausverwaltung').value =
+fixedCostsData.hausverwaltung.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('buchfuehrungskosten').value =
+fixedCostsData.buchfuehrungskosten.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('kontogebuehren').value =
+fixedCostsData.kontogebuehren.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('lohnkostenEstgGesamtDisplay').textContent =
+fixedCostsData.lohnkostenEstgGesamt.toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">            calculateNebenkosten(); //
+Neuberechnung mit den neuen Fixkosten triggern</P>
+<P STYLE="margin-bottom: 0cm">           
+document.getElementById('fixedCostsForm').classList.add('hidden'); //
+Maske wieder ausblenden</P>
+<P STYLE="margin-bottom: 0cm">        } catch (error) {</P>
+<P STYLE="margin-bottom: 0cm">            console.error(&quot;Fehler
+beim Speichern der Fixkosten in Firestore:&quot;, error);</P>
+<P STYLE="margin-bottom: 0cm">            showModal(&quot;Fehler beim
+Speichern der Fixkosten. &quot; + error.message);</P>
+<P STYLE="margin-bottom: 0cm">        }</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    /**</P>
+<P STYLE="margin-bottom: 0cm">     * Lädt Eigentümer- und
+Fixkostendaten von Firestore.</P>
+<P STYLE="margin-bottom: 0cm">     */</P>
+<P STYLE="margin-bottom: 0cm">    async function
+loadDataFromFirestore() {</P>
+<P STYLE="margin-bottom: 0cm">        try {</P>
+<P STYLE="margin-bottom: 0cm">            // Eigentümer laden</P>
+<P STYLE="margin-bottom: 0cm">            const ownersSnapshot =
+await db.collection('owners').get();</P>
+<P STYLE="margin-bottom: 0cm">            owners =
+ownersSnapshot.docs.map(doc =&gt; ({ id: doc.id, ...doc.data() }));</P>
+<P STYLE="margin-bottom: 0cm">            console.log('Eigentümer
+von Firestore geladen:', owners);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">            // Fixkosten laden (gehen
+davon aus, dass es nur ein Dokument mit fester ID 'currentCosts'
+gibt)</P>
+<P STYLE="margin-bottom: 0cm">            const fixedCostsDoc = await
+db.collection('fixedCosts').doc('currentCosts').get();</P>
+<P STYLE="margin-bottom: 0cm">            if (fixedCostsDoc.exists) {</P>
+<P STYLE="margin-bottom: 0cm">                fixedCostsData =
+fixedCostsDoc.data();</P>
+<P STYLE="margin-bottom: 0cm">                console.log('Fixkosten
+von Firestore geladen:', fixedCostsData);</P>
+<P STYLE="margin-bottom: 0cm">                // Werte in die
+Input-Felder einfügen (für die Anzeige)</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('lohnHausmeister').value =
+(fixedCostsData.lohnHausmeister || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('hausreinigung').value =
+(fixedCostsData.hausreinigung || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('wartungGaragentor').value =
+(fixedCostsData.wartungGaragentor || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('hausversicherung').value =
+(fixedCostsData.hausversicherung || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('allgemeinstrom').value =
+(fixedCostsData.allgemeinstrom || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('kaminifeger').value =
+(fixedCostsData.kaminifeger || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('legionellenTest').value =
+(fixedCostsData.legionellenTest || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('lohnReparatur').value =
+(fixedCostsData.lohnReparatur || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('repInstandhaltungGebaeude').value =
+(fixedCostsData.repInstandhaltungGebaeude || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('repInstandhaltungAussenanlage').value =
+(fixedCostsData.repInstandhaltungAussenanlage || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('hausverwaltung').value =
+(fixedCostsData.hausverwaltung || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('buchfuehrungskosten').value =
+(fixedCostsData.buchfuehrungskosten || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('kontogebuehren').value =
+(fixedCostsData.kontogebuehren || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">                
+</P>
+<P STYLE="margin-bottom: 0cm">                //
+lohnkostenEstgGesamtDisplay ist ein SPAN, der den Wert anzeigt, der
+geteilt wird.</P>
+<P STYLE="margin-bottom: 0cm">                // Der eigentliche
+Input zum Speichern ist editLohnkostenEstgGesamt.</P>
+<P STYLE="margin-bottom: 0cm">                // Beim Laden der Daten
+aus Firestore wird der Wert in den editable-sum-Span geschrieben.</P>
+<P STYLE="margin-bottom: 0cm">               
+document.getElementById('lohnkostenEstgGesamtDisplay').textContent =
+(fixedCostsData.lohnkostenEstgGesamt || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">            } else {</P>
+<P STYLE="margin-bottom: 0cm">                console.warn(&quot;Dokument
+'currentCosts' in fixedCosts-Sammlung nicht gefunden. Standardwerte
+werden verwendet.&quot;);</P>
+<P STYLE="margin-bottom: 0cm">            }</P>
+<P STYLE="margin-bottom: 0cm">        } catch (error) {</P>
+<P STYLE="margin-bottom: 0cm">            console.error(&quot;Fehler
+beim Laden der Daten von Firestore:&quot;, error);</P>
+<P STYLE="margin-bottom: 0cm">            showModal(&quot;Fehler beim
+Laden der Daten. Bitte prüfen Sie Ihre Internetverbindung und die
+Firebase-Konfiguration. &quot; + error.message);</P>
+<P STYLE="margin-bottom: 0cm">        }</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    /**</P>
+<P STYLE="margin-bottom: 0cm">     * Loads the data for the currently
+selected owner and updates the UI.</P>
+<P STYLE="margin-bottom: 0cm">     */</P>
+<P STYLE="margin-bottom: 0cm">    function loadOwnerData() {</P>
+<P STYLE="margin-bottom: 0cm">        const ownerSelect =
+document.getElementById('ownerSelect');</P>
+<P STYLE="margin-bottom: 0cm">        const recipientAddressDiv =
+document.getElementById('recipientAddress');</P>
+<P STYLE="margin-bottom: 0cm">        const dynamicSalutationP =
+document.getElementById('dynamicSalutation');</P>
+<P STYLE="margin-bottom: 0cm">        const heizkostenInput =
+document.getElementById('heizkosten');</P>
+<P STYLE="margin-bottom: 0cm">        const hausgeldzahlungInput =
+document.getElementById('hausgeldzahlung');</P>
+<P STYLE="margin-bottom: 0cm">        const ownerIbanInput =
+document.getElementById('ownerIban');</P>
+<P STYLE="margin-bottom: 0cm">        const ownerNameResultSpan =
+document.getElementById('ownerNameResult');</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const selectedOwnerId =
+ownerSelect.value;</P>
+<P STYLE="margin-bottom: 0cm">        currentOwner =
+owners.find(owner =&gt; owner.id === selectedOwnerId);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        if (currentOwner) {</P>
+<P STYLE="margin-bottom: 0cm">           
+dynamicSalutationP.textContent = currentOwner.salutation;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">            let addressHtml = '';</P>
+<P STYLE="margin-bottom: 0cm">            if (currentOwner.id ===
+'owner5' &amp;&amp; currentOwner.name2 &amp;&amp;
+currentOwner.street2 &amp;&amp; currentOwner.zipCity2) {</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;div class=&quot;recipient-address-two-columns&quot;&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;div class=&quot;recipient-address-column&quot;&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;strong&gt;${currentOwner.name}&lt;/strong&gt;&lt;br&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                if
+(currentOwner.street) {</P>
+<P STYLE="margin-bottom: 0cm">                   
+recipientAddressHtml += `${currentOwner.street}&lt;br&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                }</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`${currentOwner.zipCity}`;</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;/div&gt;`;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;div class=&quot;recipient-address-column offset&quot;&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;strong&gt;${currentOwner.name2}&lt;/strong&gt;&lt;br&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                if
+(currentOwner.street2) {</P>
+<P STYLE="margin-bottom: 0cm">                   
+recipientAddressHtml += `${currentOwner.street2}&lt;br&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                }</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`${currentOwner.zipCity2}`;</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;/div&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;/div&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">            } else {</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;div class=&quot;recipient-address&quot;&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;strong&gt;${currentOwner.name}&lt;/strong&gt;&lt;br&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                if
+(currentOwner.street) {</P>
+<P STYLE="margin-bottom: 0cm">                   
+recipientAddressHtml += `${currentOwner.street}&lt;br&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">                }</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`${currentOwner.zipCity}`;</P>
+<P STYLE="margin-bottom: 0cm">                recipientAddressHtml +=
+`&lt;/div&gt;`;</P>
+<P STYLE="margin-bottom: 0cm">            }</P>
+<P STYLE="margin-bottom: 0cm">           
+recipientAddressDiv.innerHTML = addressHtml;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">            heizkostenInput.value =
+(currentOwner.heizkosten || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm">            hausgeldzahlungInput.value
+= (currentOwner.hausgeldzahlung || 0).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">            ownerIbanInput.value =
+currentOwner.iban || DEFAULT_IBAN;</P>
+<P STYLE="margin-bottom: 0cm">           
+ownerNameResultSpan.textContent = currentOwner.name;</P>
+<P STYLE="margin-bottom: 0cm">        } else {</P>
+<P STYLE="margin-bottom: 0cm">           
+dynamicSalutationP.textContent = '';</P>
+<P STYLE="margin-bottom: 0cm">           
+recipientAddressDiv.innerHTML = `</P>
+<P STYLE="margin-bottom: 0cm">                Eigentümer der WEG&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">                Seligenstädter Str.
+23&lt;br&gt;</P>
+<P STYLE="margin-bottom: 0cm">                63500 Seligenstadt</P>
+<P STYLE="margin-bottom: 0cm">            `;</P>
+<P STYLE="margin-bottom: 0cm">            heizkostenInput.value =
+'0.00';</P>
+<P STYLE="margin-bottom: 0cm">            hausgeldzahlungInput.value
+= '0.00';</P>
+<P STYLE="margin-bottom: 0cm">            ownerIbanInput.value =
+DEFAULT_IBAN;</P>
+<P STYLE="margin-bottom: 0cm">           
+ownerNameResultSpan.textContent = 'alle Eigentümer';</P>
+<P STYLE="margin-bottom: 0cm">        }</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    /**</P>
+<P STYLE="margin-bottom: 0cm">     * Calculates the utility bill
+statement for the selected owner.</P>
+<P STYLE="margin-bottom: 0cm">     * This function can operate in two
+modes:</P>
+<P STYLE="margin-bottom: 0cm">     * 1. On the main page, it updates
+the display for the current owner.</P>
+<P STYLE="margin-bottom: 0cm">     * 2. When generating print content
+for another window, it uses provided ownerData.</P>
+<P STYLE="margin-bottom: 0cm">     * @param {object}
+[ownerData=currentOwner] - Optional: specific owner data to use for
+calculation.</P>
+<P STYLE="margin-bottom: 0cm">     * If not provided, uses the
+globally selected `currentOwner`.</P>
+<P STYLE="margin-bottom: 0cm">     * @returns {object} An object
+containing calculated results for rendering.</P>
+<P STYLE="margin-bottom: 0cm">     */</P>
+<P STYLE="margin-bottom: 0cm">    function
+calculateNebenkostenForPrint(ownerData = currentOwner) {</P>
+<P STYLE="margin-bottom: 0cm">        if (!ownerData) {</P>
+<P STYLE="margin-bottom: 0cm">            console.error(&quot;No
+owner data provided for calculation.&quot;);</P>
+<P STYLE="margin-bottom: 0cm">            return null;</P>
+<P STYLE="margin-bottom: 0cm">        }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const lohnHausmeisterFixed =
+parseFloat(document.getElementById('lohnHausmeister').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const hausreinigungFixed =
+parseFloat(document.getElementById('hausreinigung').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const wartungGaragentorFixed =
+parseFloat(document.getElementById('wartungGaragentor').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const hausversicherungFixed =
+parseFloat(document.getElementById('hausversicherung').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const allgemeinstromFixed =
+parseFloat(document.getElementById('allgemeinstrom').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const kaminifegerFixed =
+parseFloat(document.getElementById('kaminifeger').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const legionellenTestFixed =
+parseFloat(document.getElementById('legionellenTest').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const
+lohnkostenEstgGesamtDisplay =
+document.getElementById('lohnkostenEstgGesamtDisplay');</P>
+<P STYLE="margin-bottom: 0cm">        const
+spezifischeLohnkostenManuell =
+parseFloat(lohnkostenEstgGesamtDisplay.textContent.replace(',',
+'.').replace('€', '').trim()) || 0;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const lohnReparaturFixed =
+parseFloat(document.getElementById('lohnReparatur').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const
+repInstandhaltungGebaeudeFixed =
+parseFloat(document.getElementById('repInstandhaltungGebaeude').value)
+|| 0;</P>
+<P STYLE="margin-bottom: 0cm">        const
+repInstandhaltungAussenanlageFixed =
+parseFloat(document.getElementById('repInstandhaltungAussenanlage').value)
+|| 0;</P>
+<P STYLE="margin-bottom: 0cm">        const hausverwaltungFixed =
+parseFloat(document.getElementById('hausverwaltung').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const buchfuehrungskostenFixed
+= parseFloat(document.getElementById('buchfuehrungskosten').value) ||
+0;</P>
+<P STYLE="margin-bottom: 0cm">        const kontogebuehrenFixed =
+parseFloat(document.getElementById('kontogebuehren').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const heizkostenOwner =
+ownerData.heizkosten || 0;</P>
+<P STYLE="margin-bottom: 0cm">        const hausgeldzahlungOwner =
+ownerData.hausgeldzahlung || 0;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const
+totalUmlagefaehigFixedPool = lohnHausmeisterFixed +
+hausreinigungFixed + wartungGaragentorFixed +</P>
+<P STYLE="margin-bottom: 0cm">            hausversicherungFixed +
+allgemeinstromFixed + kaminifegerFixed +</P>
+<P STYLE="margin-bottom: 0cm">            legionellenTestFixed;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const
+totalNichtUmlagefaehigPool = lohnReparaturFixed +
+repInstandhaltungGebaeudeFixed + repInstandhaltungAussenanlageFixed +</P>
+<P STYLE="margin-bottom: 0cm">            hausverwaltungFixed +
+buchfuehrungskostenFixed + kontogebuehrenFixed;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const
+ownerAnteilUmlagefaehigPool = totalUmlagefaehigFixedPool *
+ownerData.ownershipShare;</P>
+<P STYLE="margin-bottom: 0cm">        const
+ownerAnteilNichtUmlagefaehig = totalNichtUmlagefaehigPool *
+ownerData.ownershipShare;</P>
+<P STYLE="margin-bottom: 0cm">        const
+ownerAnteilSpezifischeLohnkosten = spezifischeLohnkostenManuell *
+ownerData.ownershipShare;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const ownerAnteilET =
+ownerAnteilUmlagefaehigPool + ownerAnteilNichtUmlagefaehig +
+heizkostenOwner;</P>
+<P STYLE="margin-bottom: 0cm">        const nachzahlungGuthaben =
+ownerAnteilET - hausgeldzahlungOwner;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const printDate = new Date();</P>
+<P STYLE="margin-bottom: 0cm">        const printDateFormatted =
+printDate.toLocaleDateString('de-DE', {</P>
+<P STYLE="margin-bottom: 0cm">            day: '2-digit',</P>
+<P STYLE="margin-bottom: 0cm">            month: '2-digit',</P>
+<P STYLE="margin-bottom: 0cm">            year: 'numeric'</P>
+<P STYLE="margin-bottom: 0cm">        }) + ', ' +
+printDate.toLocaleTimeString('de-DE', {</P>
+<P STYLE="margin-bottom: 0cm">            hour: '2-digit',</P>
+<P STYLE="margin-bottom: 0cm">            minute: '2-digit'</P>
+<P STYLE="margin-bottom: 0cm">        });</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        return {</P>
+<P STYLE="margin-bottom: 0cm">            ownerName: ownerData.name,</P>
+<P STYLE="margin-bottom: 0cm">            ownerName2:
+ownerData.name2,</P>
+<P STYLE="margin-bottom: 0cm">            ownerId: ownerData.id,</P>
+<P STYLE="margin-bottom: 0cm">            salutation:
+ownerData.salutation,</P>
+<P STYLE="margin-bottom: 0cm">            street: ownerData.street,</P>
+<P STYLE="margin-bottom: 0cm">            zipCity: ownerData.zipCity,</P>
+<P STYLE="margin-bottom: 0cm">            street2: ownerData.street2,</P>
+<P STYLE="margin-bottom: 0cm">            zipCity2:
+ownerData.zipCity2,</P>
+<P STYLE="margin-bottom: 0cm">            ownershipShareFormatted:
+`${(ownerData.ownershipShare * 1000).toFixed(2)}/1000`,</P>
+<P STYLE="margin-bottom: 0cm">            totalUmlagefaehigFixedPool:
+formatCurrency(totalUmlagefaehigFixedPool),</P>
+<P STYLE="margin-bottom: 0cm">           
+ownerAnteilUmlagefaehigPool:
+formatCurrency(ownerAnteilUmlagefaehigPool),</P>
+<P STYLE="margin-bottom: 0cm">            totalNichtUmlagefaehigPool:
+formatCurrency(totalNichtUmlagefaehigPool),</P>
+<P STYLE="margin-bottom: 0cm">           
+ownerAnteilNichtUmlagefaehig:
+formatCurrency(ownerAnteilNichtUmlagefaehig),</P>
+<P STYLE="margin-bottom: 0cm">            heizkostenOwner:
+formatCurrency(heizkostenOwner),</P>
+<P STYLE="margin-bottom: 0cm">            ownerAnteilET:
+formatCurrency(ownerAnteilET),</P>
+<P STYLE="margin-bottom: 0cm">            hausgeldzahlungOwner:
+formatCurrency(hausgeldzahlungOwner),</P>
+<P STYLE="margin-bottom: 0cm">           
+spezifischeLohnkostenManuell:
+formatCurrency(spezifischeLohnkostenManuell),</P>
+<P STYLE="margin-bottom: 0cm">           
+ownerAnteilSpezifischeLohnkosten:
+formatCurrency(ownerAnteilSpezifischeLohnkosten),</P>
+<P STYLE="margin-bottom: 0cm">            nachzahlungGuthabenValue:
+nachzahlungGuthaben,</P>
+<P STYLE="margin-bottom: 0cm">            nachzahlungGuthabenText:
+nachzahlungGuthaben &gt; 0 ? `Nachzahlung:
+${formatCurrency(nachzahlungGuthaben)}` : `Guthaben:
+${formatCurrency(Math.abs(nachzahlungGuthaben))} - Ihr Guthaben wird
+Ihnen nach Genehmigung durch die Eigentümerversammlung ausbezahlt`,</P>
+<P STYLE="margin-bottom: 0cm">            isGuthaben:
+nachzahlungGuthaben &lt; 0,</P>
+<P STYLE="margin-bottom: 0cm">            paymentDate:
+document.getElementById('paymentDate').value,</P>
+<P STYLE="margin-bottom: 0cm">            iban: ownerData.iban ||
+DEFAULT_IBAN,</P>
+<P STYLE="margin-bottom: 0cm">            printDateTime:
+printDateFormatted,</P>
+<P STYLE="margin-bottom: 0cm">            lohnHausmeisterRaw:
+lohnHausmeisterFixed,</P>
+<P STYLE="margin-bottom: 0cm">            hausreinigungRaw:
+hausreinigungFixed,</P>
+<P STYLE="margin-bottom: 0cm">            wartungGaragentorRaw:
+wartungGaragentorFixed,</P>
+<P STYLE="margin-bottom: 0cm">            hausversicherungRaw:
+hausversicherungFixed,</P>
+<P STYLE="margin-bottom: 0cm">            allgemeinstromRaw:
+allgemeinstromFixed,</P>
+<P STYLE="margin-bottom: 0cm">            kaminifegerRaw:
+kaminifegerFixed,</P>
+<P STYLE="margin-bottom: 0cm">            legionellenTestRaw:
+legionellenTestFixed,</P>
+<P STYLE="margin-bottom: 0cm">            lohnReparaturRaw:
+lohnReparaturFixed,</P>
+<P STYLE="margin-bottom: 0cm">           
+repInstandhaltungGebaeudeRaw: repInstandhaltungGebaeudeFixed,</P>
+<P STYLE="margin-bottom: 0cm">           
+repInstandhaltungAussenanlageRaw: repInstandhaltungAussenanlageFixed,</P>
+<P STYLE="margin-bottom: 0cm">            hausverwaltungRaw:
+hausverwaltungFixed,</P>
+<P STYLE="margin-bottom: 0cm">            buchfuehrungskostenRaw:
+buchfuehrungskostenFixed,</P>
+<P STYLE="margin-bottom: 0cm">            kontogebuehrenRaw:
+kontogebuehrenFixed,</P>
+<P STYLE="margin-bottom: 0cm">            };</P>
+<P STYLE="margin-bottom: 0cm">    }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">    function calculateNebenkosten() {</P>
+<P STYLE="margin-bottom: 0cm">        if (!currentOwner) {</P>
+<P STYLE="margin-bottom: 0cm">            showModal('Bitte wählen
+Sie zuerst einen Eigentümer aus.');</P>
+<P STYLE="margin-bottom: 0cm">            return;</P>
+<P STYLE="margin-bottom: 0cm">        }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        currentOwner.heizkosten =
+parseFloat(document.getElementById('heizkosten').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm">        currentOwner.hausgeldzahlung =
+parseFloat(document.getElementById('hausgeldzahlung').value) || 0;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const results =
+calculateNebenkostenForPrint(currentOwner);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        if (!results) {</P>
+<P STYLE="margin-bottom: 0cm">            return;</P>
+<P STYLE="margin-bottom: 0cm">        }</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('ownershipShareResult').textContent =
+results.ownershipShareFormatted;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('totalUmlagefaehigFixedPool').textContent =
+results.totalUmlagefaehigFixedPool;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('ownerAnteilUmlagefaehigPool').textContent =
+results.ownerAnteilUmlagefaehigPool;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('totalNichtUmlagefaehig').textContent =
+results.totalNichtUmlagefaehigPool;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('ownerAnteilNichtUmlagefaehig').textContent =
+results.ownerAnteilNichtUmlagefaehig;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('heizkostenResult').textContent =
+results.heizkostenOwner;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('ownerAnteilET').textContent =
+results.ownerAnteilET;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('hausgeldzahlungResult').textContent =
+results.hausgeldzahlungOwner;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('lohnkostenEstgAnteil').textContent = `Ihr
+Anteil: ${results.ownerAnteilSpezifischeLohnkosten}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('lohnkostenEstgGesamtDisplay').textContent =
+parseFloat(document.getElementById('lohnkostenEstgGesamtDisplay').textContent.replace(',',
+'.').replace('€', '').trim()).toFixed(2);</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        const finalResultDiv =
+document.getElementById('finalResult');</P>
+<P STYLE="margin-bottom: 0cm">        const nachzahlungGuthabenSpan =
+document.getElementById('nachzahlungGuthaben');</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">        if (results.isGuthaben) {</P>
+<P STYLE="margin-bottom: 0cm">           
+finalResultDiv.classList.add('negative');</P>
+<P STYLE="margin-bottom: 0cm">        } else {</P>
+<P STYLE="margin-bottom: 0cm">           
+finalResultDiv.classList.remove('negative');</P>
+<P STYLE="margin-bottom: 0cm">        }</P>
+<P STYLE="margin-bottom: 0cm">       
+nachzahlungGuthabenSpan.textContent =
+results.nachzahlungGuthabenText;</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('lohnHausmeisterShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('lohnHausmeister').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('hausreinigungShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('hausreinigung').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('wartungGaragentorShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('wartungGaragentor').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('hausversicherungShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('hausversicherung').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('allgemeinstromShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('allgemeinstrom').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('kaminifegerShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('kaminifeger').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('legionellenTestShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('legionellenTest').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('lohnReparaturShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('lohnReparatur').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('repInstandhaltungGebaeudeShare').textContent
+= `Ihr Anteil:
+${formatCurrency(parseFloat(document.getElementById('repInstandhaltungGebaeude').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('repInstandhaltungAussenanlageShare').textContent
+= `Ihr Anteil:
+${formatCurrency(parseFloat(document.getElementById('repInstandhaltungAussenanlage').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('hausverwaltungShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('hausverwaltung').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('buchfuehrungskostenShare').textContent =
+`Ihr Anteil:
+${formatCurrency(parseFloat(document.getElementById('buchfuehrungskosten').value)
+* currentOwner.ownershipShare)}`;</P>
+<P STYLE="margin-bottom: 0cm">       
+document.getElementById('kontogebuehrenShare').textContent = `Ihr
+Anteil:
+${formatCurrency(parseFloat(document.getElementById('kontogebuehren').value)
+* currentOwner.ownershipShare)}`;</P>
+</BODY>
+</HTML>
